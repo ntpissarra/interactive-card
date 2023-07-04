@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Overpass";
+  background: hsl(216, 12%, 8%);
+  font-size: 15px;
+}
+
+p,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 360px;
+  width: 335px;
+  margin: 0 auto;
+}
+
+.box {
+  background: hsl(213, 19%, 18%);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.image-circle {
+  background: hsl(212, 23%, 24%);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .image-circle {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.content h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  padding: 15px 0;
+}
+.content p {
+  color: hsl(216, 12%, 54%);
+  line-height: 1.4;
+}
+
+.score {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.score button {
+  background: hsl(212, 23%, 24%);
+  color: hsl(216, 12%, 54%);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+.score button:hover {
+  background: hsl(216, 12%, 54%);
+  color: #fff;
+}
+.score button.selected {
+  background: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.btn button {
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 15px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn button:hover {
+  color: hsl(25, 97%, 53%);
+  background: #fff;
+}
+.btn button:disabled {
+  cursor: not-allowed;
+}
+
+.submitted {
+  display: none;
+}
+.submitted .submitted-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submitted .total-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.submitted .total-score p {
+  background: hsl(212, 23%, 24%);
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 5px 10px;
+  line-height: normal;
+}
+.submitted h1 {
+  text-align: center;
+  color: #fff;
+}
+.submitted p {
+  padding: 10px 0;
+  text-align: center;
+  color: hsl(216, 12%, 54%);
+}
+
+/*# sourceMappingURL=output.css.map */
